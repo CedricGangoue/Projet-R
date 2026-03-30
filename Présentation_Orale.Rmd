@@ -1,0 +1,77 @@
+---
+title: "Présentation orale — Projet MQT-3000"
+subtitle: "Bornes de recharge publiques — Ville de Montréal"
+author: "Cédric Gangoué<br/>Alexis Senzier"
+date: "2026-04-14"
+output:
+  ioslides_presentation:
+    widescreen: true
+    self_contained: true
+    css: presentation_custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+## Introduction
+
+- Présentation du projet (bornes de recharge publiques, Ville de Montréal).
+- Plan : contexte, données, résultats descriptifs et prédictifs, tableau de bord, conclusion.
+
+## Contexte et enjeu
+
+- Transition vers la mobilité électrique : besoin d’**infrastructures de recharge** accessibles.
+- Enjeu pour une ville : **répartition** des bornes et **équité territoriale** (pas seulement le nombre total).
+- **Périmètre** : analyse centrée sur la **Ville de Montréal**.
+
+## Problématique
+
+- Où la **couverture actuelle** des bornes publiques semble-t-elle **insuffisante** à Montréal ?
+- Comment **prioriser** des secteurs pour l’**ajout** de nouvelles bornes ?
+
+## Questions d’analytique — Partie descriptive
+
+- Comment les bornes sont-elles **réparties** sur le territoire montréalais ?
+- Quels secteurs paraissent **mieux couverts** ou **sous-desservis** (indicateurs : densité, distance, nombre par zone) ?
+
+## Questions d’analytique — Partie prédictive
+
+- Peut-on **classer** ou **prioriser** des zones pour l’implantation à partir des données et d’indicateurs de couverture ?
+- Quel **modèle** ou **règle** retient-on pour les **recommandations** (validation des approches) ?
+
+## Données
+
+- Jeu **ouvert** sur les bornes de recharge publiques (localisation, attributs).
+- Utilisation principale : **coordonnées**, filtre **Montréal**, variables descriptives (niveau de recharge, type d’emplacement, etc.).
+
+## Résultats — Analyse descriptive
+
+- **Carte** des bornes à Montréal.
+- Indicateurs : **nombre** par zone, **distance** à la borne la plus proche, ou **densité** (selon la définition retenue).
+- Synthèse : contrastes entre secteurs, identification des **zones sous-desservies**.
+
+## Résultats — Analyse prédictive
+
+- **Entrées** du modèle (variables retenues).
+- **Sortie** : score, classement ou recommandations pour la décision.
+- **Validation** : comparaison d’approches ou métrique d’erreur (brève).
+
+## Tableau de bord
+
+- **Vue descriptive** : situation actuelle et zones à risque.
+- **Vue prédictive** : recommandations ou priorités.
+- Démarche décisionnelle : **prioriser** des secteurs (complément à une étude de faisabilité locale).
+
+## Limites et conclusion
+
+- Sans données externes : accent sur la **couverture spatiale** / l’**accessibilité**, pas sur la demande réelle (usage, parc de VE).
+- **Livrables** : insights, prototype fonctionnel, pistes d’amélioration (données complémentaires).
+
+## Démonstration
+
+- Parcours dans le **prototype** du tableau de bord (filtres, cartes, résultats du modèle).
+
+## Questions
+
+- Merci — **questions** ?

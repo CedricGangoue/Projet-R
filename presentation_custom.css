@@ -1,0 +1,103 @@
+/* ioslides : auto-fadein met opacity: 0 au départ */
+slide hgroup.auto-fadein,
+slides > slide hgroup {
+  opacity: 1 !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+  -webkit-transition-delay: 0s !important;
+  transition-delay: 0s !important;
+}
+
+/* Titres des diapos de contenu (## dans le .Rmd) — règles explicites pour éviter titres invisibles */
+slides > slide:not(.title-slide) hgroup,
+slides slide:not(.title-slide) hgroup {
+  position: relative !important;
+  bottom: auto !important;
+  width: 100% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 10 !important;
+  padding-top: 0 !important;
+}
+
+slides > slide:not(.title-slide) hgroup h2,
+slides slide:not(.title-slide) hgroup h2,
+slide:not(.title-slide) hgroup h2 {
+  color: #1a1a1a !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  font-size: 42px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 600 !important;
+  margin: 0 0 0.4em 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 11 !important;
+}
+
+/* Page de titre : centré verticalement et horizontalement (annule bottom: 100px du thème ioslides) */
+slides > slide.title-slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 3em !important;
+  padding-right: 3em !important;
+  box-sizing: border-box;
+}
+
+slides > slide.title-slide hgroup {
+  position: relative !important;
+  bottom: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto !important;
+  text-align: center;
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+slides > slide.title-slide article {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.25em;
+}
+
+slides > slide.title-slide h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 0.25em;
+  color: #1a1a1a;
+}
+
+slides > slide.title-slide h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 0.35em;
+  color: #555555;
+}
+
+slides > slide.title-slide p {
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+/* Sous-titres dans le corps (### dans le .Rmd) */
+slides > slide:not(.title-slide) article h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 0.6em;
+  margin-bottom: 0.35em;
+}
+
+/* Corps de texte des diapos (pas la page titre) */
+slides > slide:not(.title-slide) {
+  font-size: 22px;
+}
