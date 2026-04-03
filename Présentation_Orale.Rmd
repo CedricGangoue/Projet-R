@@ -75,5 +75,3 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ## Questions
 
 - Merci — **questions** ?
-
-**Questions** Merci Merci
