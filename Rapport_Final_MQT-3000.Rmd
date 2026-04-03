@@ -1,0 +1,128 @@
+---
+title: "Rapport final — Projet MQT-3000"
+subtitle: "Bornes de recharge publiques — Ville de Montréal"
+author: "Cédric Gangoué, Alexis Senzier"
+date: "2026-04-14"
+lang: fr
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center",
+  out.width = "85%"
+)
+```
+
+<!-- Exigence rappel : au minimum ~3000 mots dans le corps du texte (hors page titre, TOC, légendes longues, références). Pas de listing de code dans le PDF ; pas de messages d’erreur ni d’avertissements visibles après compilation. -->
+
+# Introduction et contexte
+
+<!-- Étapes / contenu attendu (max. ~1 page) -->
+
+- Poser le **contexte** : mobilité électrique, rôle des bornes publiques, enjeu pour une ville (répartition, équité territoriale).
+- Annoncer le **périmètre** : Ville de Montréal, jeu de données utilisé.
+- Présenter brièvement la **structure** du rapport (renvoi aux sections suivantes).
+
+_Rédigez le texte ci-dessous (remplacez ce paragraphe)._
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+
+# Description de la problématique retenue
+
+<!-- Étapes / contenu attendu (1 à 3 pages) : données + questions d’analytique -->
+
+## Données
+
+- **Source** et **période** / fraîcheur des données.
+- **Variables** importantes (localisation, niveau de recharge, type d’emplacement, tarification, etc.).
+- **Traitement** : filtrage Montréal, qualité des données, limites connues.
+
+## Questions d’analytique
+
+- Partie **descriptive** : répartition spatiale, indicateurs (densité, distance, nombre par zone), identification des zones sous-desservies.
+- Partie **prédictive / prescriptive** : priorisation de secteurs, recommandations, lien avec la décision (où ajouter des bornes).
+
+_Rédigez le texte ci-dessous._
+
+# Solution proposée
+
+<!-- Étapes / contenu attendu (4 à 5 pages) : approches testées, modèles / algorithmes -->
+
+## Approches envisagées et testées
+
+- Décrire les **pistes** explorées (spatial, scoring, modèle statistique ou ML, règles métier, etc.).
+- Expliquer pourquoi certaines pistes ont été **écartées** ou **retenues**.
+
+## Modèles et algorithmes utilisés
+
+- **Formulation** du problème (entrées, sorties, objectif).
+- **Équations ou règles** : les expliquer clairement (pas seulement du code).
+- **Hypothèses** et interprétation des résultats.
+
+## Comparaison et justification
+
+- Comparer **plusieurs approches** ou variantes (même si tout n’est pas dans le prototype final).
+- **Justifier** le choix retenu pour le tableau de bord et les recommandations.
+
+_Rédigez le texte ci-dessous._
+
+# Approche expérimentale et expérimentations
+
+<!-- Étapes / contenu attendu (1 à 2 pages) -->
+
+- **Scénarios** ou cas d’usage testés.
+- **Protocole** : métriques, validation, comparaison des modèles ou des règles.
+- **Résultats** quantitatifs ou qualitatifs (tableaux / figures : générés via chunks R si besoin, sans afficher le code).
+
+_Rédigez le texte ci-dessous._
+
+# Description du prototype de tableau de bord
+
+<!-- Étapes / contenu attendu (2 à 4 pages) -->
+
+- **Objectif** du prototype et **public** visé.
+- **Fonctionnalités** : vue descriptive (cartes, indicateurs, filtre Montréal), vue prédictive ou prescriptive (classement, priorités, sortie du modèle).
+- **Parcours utilisateur** (cohérent avec la démonstration à l’oral).
+- **Limites** du prototype et **pistes d’évolution** (données, modèles, ergonomie).
+
+_Rédigez le texte ci-dessous._
+
+# Conclusion
+
+<!-- Étapes / contenu attendu (max. ~1 page) -->
+
+- Synthèse des **apports** (insights, aide à la décision).
+- Rappel des **limites** (ex. absence de données de demande réelle si applicable).
+- **Perspectives** : données complémentaires, amélioration des modèles, déploiement.
+
+_Rédigez le texte ci-dessous._
+
+# Références
+
+<!-- Citer toutes les sources : données, articles, documentation R/Shiny, etc. -->
+
+- Organisation ou portail des **données** (URL, date de consultation).
+- Références **bibliographiques** au format demandé par le cours.
+
+- Auteur (année). *Titre*. Revue ou éditeur. URL ou DOI si disponible.
+
+---
+
+## Annexe — Rappel des exigences du livrable (checklist)
+
+Les points ci-dessous proviennent du livrable 2 ; ils servent de **grille de reprise** avant remise (à retirer ou laisser en annexe selon les consignes du professeur).
+
+- Prototype de tableau de bord **fonctionnel** (pénalisé si non fonctionnel).
+- Traitement des données et résultats réalisés avec **R** (entrées, sorties, résultats expérimentaux).
+- Intégration claire des volets **descriptif** (cartes, indicateurs, zones sous-desservies) et **prédictif / prescriptif** (recommandations, priorités, sortie du modèle).
+- **Cohérence** : ce qui est décrit ici correspond au prototype et au filtre Montréal.
+- **Forme** : pas de listing de code dans le PDF ; pas d’erreurs ni d’avertissements visibles après compilation.
+- **Volume** : au minimum **3000 mots** dans le corps du texte (hors page titre, table des matières, listes/légendes trop longues, références).
